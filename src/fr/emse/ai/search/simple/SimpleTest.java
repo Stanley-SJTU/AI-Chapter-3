@@ -8,7 +8,7 @@ import fr.emse.ai.search.solver.DepthFirstTreeSearch;
 public class SimpleTest {
 
     public static void main(String[] args) {
-        SimpleOrientedGraphProblem p1 = new SimpleOrientedGraphProblem();
+        FarmerProblem p1 = new FarmerProblem();
         System.out.println("Solution to problem : ");
         System.out.println(new BreadthFirstGraphSearch().solve(p1).pathToString());
     }

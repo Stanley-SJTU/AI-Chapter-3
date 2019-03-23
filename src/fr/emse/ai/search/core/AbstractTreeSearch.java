@@ -37,7 +37,7 @@ public abstract class AbstractTreeSearch implements TreeSearch {
                     done = true;
                 } else {
                     frontier.addAll(expand(node, problem));
-                    System.out.printf("Expanding node, frontier is " + frontier);
+                    System.out.print("Expanding node, frontier is " + frontier);
                 }
             }
         }

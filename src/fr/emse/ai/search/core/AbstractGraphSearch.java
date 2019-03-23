@@ -36,7 +36,7 @@ public abstract class AbstractGraphSearch implements Search {
                     explored_set.put(node,node.getState());  // put the node in the explored set
                     System.out.println(node.getState());
                     frontier.addAll(expand(node, problem, explored_set));
-                    System.out.printf("Expanding node, frontier is " + frontier);
+                    System.out.print("Expanding node, frontier is " + frontier);
                 }
             }
         }

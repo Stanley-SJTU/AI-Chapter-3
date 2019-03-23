@@ -5,11 +5,23 @@ public class FarmerState {
     private int farmerLeft;
     private int cabbageLeft;
     private int wolfLeft;
-    private int beanLeft;
+    private int goatLeft;
     private int farmerRight;
     private int cabbageRight;
     private int wolfRight;
-    private int beanRight;
+    private int goatRight;
+
+    public FarmerState(int farmerLeft, int cabbageLeft, int wolfLeft, int goatLeft, 
+                       int farmerRight, int cabbageRight, int wolfRight, int goatRight) {
+        this.farmerLeft = farmerLeft;
+        this.farmerRight = farmerRight;
+        this.cabbageLeft = cabbageLeft;
+        this.cabbageRight = cabbageRight;
+        this.wolfLeft = wolfLeft;
+        this.wolfRight = wolfRight;
+        this.goatLeft = goatLeft;
+        this.goatRight = goatRight;
+    }
 
     public int getFarmerLeft() { return farmerLeft; }
 
@@ -23,9 +35,9 @@ public class FarmerState {
 
     public void setWolfLeft(int wolfLeft) { this.wolfLeft = wolfLeft; }
 
-    public int getBeanLeft() { return beanLeft; }
+    public int getGoatLeft() { return goatLeft; }
 
-    public void setBeanLeft(int beanLeft) { this.beanLeft = beanLeft; }
+    public void setGoatLeft(int goatLeft) { this.goatLeft = goatLeft; }
 
     public int getFarmerRight() { return farmerRight; }
 
@@ -39,9 +51,9 @@ public class FarmerState {
 
     public void setWolfRight(int wolfRight) { this.wolfRight = wolfRight; }
 
-    public int getBeanRight() { return beanRight; }
+    public int getGoatRight() { return goatRight; }
 
-    public void setBeanRight(int beanRight) { this.beanRight = beanRight; }
+    public void setGoatRight(int goatRight) { this.goatRight = goatRight; }
 
     @Override
     public boolean equals(Object o) {
@@ -53,11 +65,11 @@ public class FarmerState {
         if (farmerLeft != that.farmerLeft) return false;
         if (cabbageLeft != that.cabbageLeft) return false;
         if (wolfLeft != that.wolfLeft) return false;
-        if (beanLeft != that.beanLeft) return false;
+        if (goatLeft != that.goatLeft) return false;
         if (farmerRight != that.farmerRight) return false;
         if (cabbageRight != that.cabbageRight) return false;
         if (wolfRight != that.wolfRight) return false;
-        return beanRight == that.beanRight;
+        return goatRight == that.goatRight;
     }
 
     @Override
@@ -66,11 +78,11 @@ public class FarmerState {
                 "farmerLeft=" + farmerLeft +
                 ", cabbageLeft=" + cabbageLeft +
                 ", wolfLeft=" + wolfLeft +
-                ", beanLeft=" + beanLeft +
+                ", goatLeft=" + goatLeft +
                 ", farmerRight=" + farmerRight +
                 ", cabbageRight=" + cabbageRight +
                 ", wolfRight=" + wolfRight +
-                ", beanRight=" + beanRight +
+                ", goatRight=" + goatRight +
                 '}';
     }
 }
